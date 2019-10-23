@@ -1,0 +1,187 @@
+body {
+  overflow-x: hidden;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  width: 980px;
+  height: 850px;
+  background: #fff;
+  padding-top: 100px;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.column-left {
+  top: 150px;
+  max-width: 403px;
+  width: 58.33333%;
+  -webkit-animation: fadein 4s;
+  -moz-animation: fadein 4s;
+  -ms-animation: fadein 4s;
+  -o-animation: fadein 4s;
+  animation: fadein 4s;
+}
+
+.column-right {
+  width: 41.66667%;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  animation: fadein 2s;
+}
+
+.infos {
+  position: relative;
+  top: 150px;
+}
+
+.background-image {
+  width: 1245px;
+  height: 600px;
+  background-size: 1245px 600px;
+  background-repeat: no-repeat;
+  background-image: url("./../images/backgrounds/music_hero_large.jpg");
+  position: relative;
+  left: 46px;
+  margin: 0;
+  padding: 0;
+}
+
+.apple-logo {
+  width: 99px;
+  height: 25px;
+  background-size: 99px 25px;
+  background-repeat: no-repeat;
+  background-image: url("./../images/logo/hero_logo_large.png");
+  margin: 0;
+  padding: 0;
+}
+
+.section-title {
+  font-size: 48px;
+  line-height: 1.08365;
+  font-weight: 600;
+  letter-spacing: -.003em;
+  margin-top: 23px;
+  margin-bottom: 17px;
+}
+
+.tryit-button {
+  background: #FF365D;
+  background-color: #FF365D;
+  border: none;
+  padding: 10px 15px;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.tryit-button:hover {
+  background: #FF466A;
+  background-color: #FF466A
+}
+
+.learn-more-link {
+  color: #0070c9;
+  text-decoration: none;
+}
+
+.learn-more-link:hover .learn-more-text{
+  text-decoration: underline;
+}
+
+.more::after {
+  content: ">";
+  padding-left: .3em;
+  text-decoration: none;
+}
+.more:hover {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1068px) {
+  .background-image {
+    width: 550px;
+    height: 420px;
+    background-size: 550px 420px;
+    background-repeat: no-repeat;
+    background-image: url("./../images/backgrounds/music_hero_medium.jpg");
+    margin: 0;
+    padding: 0;
+  }
+  .apple-logo {
+    width: 88px;
+    height: 22px;
+    background-size: 88px 22px;
+    background-repeat: no-repeat;
+    background-image: url("./../images/logo/hero_logo_medium.png");
+  }
+  .section-title {
+    font-size: 32px;
+    line-height: 1.125;
+    letter-spacing: .004em;
+  }
+  .main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 692px;
+  }
+  .column-right {
+    width: 50%;
+  }
+  .column-left {
+    width: 50%;
+  }
+  .infos {
+    position: relative;
+    top: 110px;
+  }
+}
+
+@media only screen and (max-width: 735px) {
+  .background-image {
+    width: 608px;
+    height: 305px;
+    background-size: 608px 305px;
+    background-repeat: no-repeat;
+    background-image: url("./../images/backgrounds/music_hero_small.jpg")
+  }
+  .apple-logo {
+    width: 88px;
+    height: 22px;
+    background-size: 88px 22px;
+    background-repeat: no-repeat;
+    background-image: url("./../images/logo/hero_logo_small.png");
+  }
+  .section-title {
+    font-size: 28px;
+    line-height: 1.14286;
+    letter-spacing: .007em;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 81.5%;
+    max-width: 414px;
+    text-align: center;
+  }
+  .column-right {
+    width: 100%;
+  }
+  .column-left {
+    width: 100%;
+    padding: 0 0 22px;
+  }
+  .apple-logo {
+    margin: auto;
+  }
+  .infos {
+    position: relative;
+    top: 0px;
+  }
+}
